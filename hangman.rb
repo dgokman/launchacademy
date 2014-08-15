@@ -26,14 +26,6 @@ while chances > 0
     count = word.count(guess)
     puts "Found #{count} occurrence(s) of the character #{guess}"
     chances -= 1
-  elsif letters[-1] == word[1]
-    puts "Word: _#{letters[-1]}" + "_" * (word.count(word) - 2)
-    puts "Chances remaining: #{chances}"
-    puts "Guess a single letter (a-z) or the entire word:"
-    guess = gets.chomp.downcase
-    count = word.count(guess)
-    puts "Found #{count} occurrence(s) of the character #{guess}"
-    chances -= 1
   else
    puts "Word: " + "_"*word.count(word)
    puts "Chances remaining: #{chances}"
