@@ -1,5 +1,3 @@
-require 'pry'
-
 def get_guess(length)
   puts "The word is #{length} letters. Guess a single letter (a-z) or the entire word:"
   gets.chomp.downcase
